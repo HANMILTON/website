@@ -1,0 +1,603 @@
+/*主体样式*/
+html,body { width:100%; height:100%;} 
+  .swiper-container1 {
+        width: 100%;
+        height: 100%;
+    }
+body{
+	-webkit-text-size-adjust:none; 
+	font-size: 16px;
+	color: black;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);	
+	/*-webkit-user-select:none;*/
+}
+body,ul,li,input,textarea{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: white;
+}
+li{
+	list-style: none;
+}
+*{
+    text-overflow: ellipsis;
+}
+input{
+	border: none;
+}
+input:focus{
+	outline: none;
+	
+}
+/*首页样式*/
+.main{
+	/*display: none;*/
+	width: 100%;
+	height: 100%;
+}
+.header{
+	width: 100%;
+	height: 70px;
+	color: white;
+	position: fixed;
+	top:0;
+	z-index: 99;
+}
+.bl-bg{
+	background: black;
+	color: white;
+}
+.pk-logo{
+	height: 70px;
+	float: left;
+	/*line-height: 70px;*/
+	padding-left: 20px;
+	padding-top: 21px;
+	cursor: pointer;
+	font-size: 24px;
+}
+.pk-logo img{
+	width: 84px;
+	height: 28px;
+}
+.nav-box{
+	width: 350px;
+	height: 70px;
+	line-height: 70px;
+	float: right;
+}
+.nav-list{
+	float: left;
+	height: 70px;
+	line-height: 70px;
+}
+.menu,.down{
+	width: 75px;
+	text-align: center;
+}
+.about-us{
+	width: 100px;
+	text-align: center;
+}
+.login{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	margin-top: 20px;
+	border: 1px solid white;
+	border-radius: 3px;  
+	cursor: pointer;
+}
+.login:hover{
+	border: 1px solid #f7941d;
+	color: #f7941d;
+}
+.banner-box{
+	width: 100%;
+	height: 100%;
+	background: url("http://img.findfit.cn/Uploads/www/img/banner.png") no-repeat center;
+	background-size: cover;
+	position: relative;
+	color: white;
+}
+.banner-slogan{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 100px;
+	font-size: 40px;
+	font-weight: bold;
+	position: absolute;
+	top:280px;
+}
+.banner-scene{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 100px;
+	font-size: 18px;
+	position: absolute;
+	top:350px;	
+}
+.register-box{
+	width: 300px;
+	height: 44px;
+	border-radius: 5px;
+	overflow: hidden;
+	position: absolute;
+	top:280px;
+	right: 100px;	
+}
+.register-input{
+	width: 200px;
+	height: 44px;
+	float: left;
+}
+.register-input input{
+	display: block;
+	width: 100%;
+	height: 44px;
+	padding-left: 20px;
+	font-size: 16px;
+}
+.register-btn{
+	width: 100px;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	float: left;
+	background: #f7941d;
+	color: white;
+	cursor: pointer;
+}
+.service-box{
+	width: 100%;
+	padding-top: 100px;
+}
+.service-title,.benefit-title,.case-title{
+	height: 140px;
+	line-height: 140px;
+	text-align: center;
+	font-size: 26px;
+}
+.service-lists{
+	width: 80%;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+.service-list{
+	width: 25%;
+	height: 100px;
+	float: left;
+}
+.service-logo img{
+	width: 15%;
+}
+.service-text{
+	margin-top: 10px;
+}
+.service-more{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	margin: 60px auto;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #f7941d;
+	color: #f7941d;
+	cursor: pointer;
+}
+.service-more:hover{
+	background: #f7941d;
+	color: white;
+}
+.news-box{
+	width: 100%;
+	height: 100%;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+}
+.news-prompt{
+	width: 80%;
+	height: 150px;
+	line-height: 50px;
+	font-size: 36px;
+	margin: 220px auto 30px;
+}
+.news-more{
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #f7941d;
+	border: 1px solid #f7941d;
+	border-radius: 5px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+.benefit-box{
+	padding-top: 70px;
+}
+.benefit-lists{
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 20px;
+}
+.benefit-list{
+	width: 28%;
+	margin-right: 8%;
+	float: left; 
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.benefit-list:hover img{
+	transform: scale(1.2);
+}
+.benefit-list:last-of-type{
+	margin-right: 0; 
+}
+.benefit-img img{
+    width: 273%;
+    position: relative;
+    left: -91%;
+    transition-duration: 1s;
+	vertical-align: bottom;    
+}
+.benefit-mask{
+	width: 100%;
+	height: 99%;
+	text-align: center;
+	background: rgba(0,0,0,.3);
+	color: white;
+	line-height: 300px;
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.case-box{
+	width: 100%;
+	padding-bottom: 40px;
+	height: 80%;
+	padding-top: 70px;
+}
+.case-title{
+	height: 70px;
+	line-height: 70px;
+}
+.case-list{
+	width: 60%;
+	text-align: center;
+	/*border: 1px solid #cccccc;*/
+	border-radius: 5px;
+	margin:  0 auto;
+	overflow: hidden;
+	/*padding-bottom: 20px;*/
+}
+.case-list img{
+	width: 100%;
+	vertical-align: bottom;
+}
+.case-name{
+	width: 100%
+	height: 50px;
+	line-height: 50px;
+	font-size: 26px;
+	text-align: center;
+	display: none;
+}
+.case-description{
+	width: 100%;
+	padding: 20px 0;
+	font-size: 18px;
+	line-height: 30px;
+	display: none;
+}
+.case-text{
+	display: none;
+}
+.footer{
+	width: 100%;
+	background: #2c3038;
+	color: white;
+	padding-bottom: 10px; 
+	/*display: none;*/
+	position: absolute;
+	bottom: 0;
+}
+.footer-title{
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 22px;
+}
+.footer-box{
+	width: 60%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.foot-info{
+	width: 70%;
+	float: left;
+}
+.footer-list{
+	width: 100%;
+	height: 37px;
+	line-height: 37px;
+	font-size: 14px;
+	float: left;
+}
+.qr-code{
+	width: 30%;
+	float: right;
+	text-align: right;	
+	padding-top: 15px;
+}
+.qr-code-img,.qr-code-img>img{
+	height: 60px;
+}
+.qr-text{
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;	
+}
+/*详情页样式*/
+.detail{
+	display: none;
+}
+.detail-list{
+	width: 100%;
+	padding: 0 15% 50px;
+	text-align: center;
+	box-sizing: border-box;
+}
+.detail-list:nth-of-type(2n){
+	background: #f7f7f7;
+}
+.detail-title{
+	height: 100px;
+	line-height: 100px;
+	font-size: 36px;
+}
+.detail-prompt{
+	line-height: 30px;
+	font-size: 18px;
+	margin-bottom: 20px; 
+}
+.detail-img{
+	width: 100%;
+}
+.detail-img img{
+	width: 100%;
+}
+.detail footer{
+	position: static;
+}
+@media screen and (max-width:768px){
+/*首页样式*/
+.header{
+	height: 50px;
+}
+.pk-logo{
+	height: 50px;
+	padding-top: 11px;
+}
+.nav-box{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+}
+.menu,.down{
+	display: none;
+}
+.about-us{
+	display: none;
+}
+.login{
+	height: 30px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+.banner-box{
+	height: 100%;
+	text-align: center;	
+}
+.banner-slogan{
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	font-size: 26px;
+	font-weight: bold;
+	top:200px;
+	padding-left: 0;
+}
+.banner-scene{
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 0;
+	font-size: 18px;
+	position: absolute;
+	top:270px;	
+}
+.register-box{
+	width: 74%;
+	top: 420px;
+    right: 13%;
+}
+.register-input{
+	width: 70%;
+	height: 44px;
+	float: left;
+}
+.register-input input{
+	display: block;
+	width: 100%;
+	height: 44px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+.register-btn{
+	width: 30%;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+	float: left;
+	background: #f7941d;
+	color: white;
+	cursor: pointer;
+}
+.service-box{
+	width: 100%;
+	padding-top: 50px;
+}
+.service-title,.benefit-title,.case-title{
+	height: 80px;
+	line-height: 80px;
+	font-size: 22px;
+}
+.case-title{
+	line-height: 30px;
+}
+.service-lists{
+	width: 90%;
+}
+.service-list{
+	width: 50%;
+	height: 80px;
+	margin-bottom: 15px;
+}
+.service-logo img{
+	width: 18%;
+}
+.service-more{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+}
+.news-box{
+	height: 100%;
+}
+.news-prompt{
+	width: 100%;
+	height: 100px;
+	line-height: 48px;
+	font-size: 24px;
+	font-weight: bold;
+	margin: 210px auto 120px;
+}
+.news-more{
+	width: 150px;
+	height: 40px;
+	line-height: 40px;
+}
+.case-box{
+	padding-top: 100px;
+}
+.benefit-box{
+	padding-top: 50px;
+}
+.benefit-lists{
+	width: 85%;
+	padding-top: 0px;
+	margin: 0 auto;	
+}
+.benefit-list{
+	width: 100%;
+	height: 50%;
+	margin-bottom: 20px;
+}
+.benefit-img img{
+	width: 100%;
+	border-radius: 5px;
+	position: relative;
+	left: 0;
+
+}
+.benefit-mask{
+	height: 100%;
+	line-height: 130px;
+	border-radius: 5px;
+}
+.case-list{
+	width: 90%;
+}
+.case-name{
+	height: 30px;
+	line-height: 30px;
+	font-size: 20px;
+}
+.case-description{
+	padding: 10px 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+.case-text{
+}
+.footer{
+	padding: 10px 0; 
+}
+.footer-title{
+	height: 40px;
+	line-height: 40px;
+	font-size: 18px;
+}
+.footer-box{
+	width: 90%;
+}
+.foot-info{
+	width: 100%;
+}
+.footer-list{
+	width: 50%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: white;
+}
+.footer-list:nth-of-type(2){
+	text-align: right;
+}
+.footer-list:last-of-type{
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+	color: #999999;
+}
+.qr-code{
+	display: none;
+}
+/*详情页样式*/
+.detail{
+	/*display: block;*/
+	padding-top: 50px;
+}
+.detail-list{
+	padding: 0 5% 20px;
+}
+.detail-title{
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+}
+.detail-prompt{
+	line-height: 20px;
+	font-size: 14px;
+	margin-bottom: 20px; 
+	color: #333333;
+}
+.detail-img{
+	width: 100%;
+}
+.detail-img img{
+	width: 100%;
+}
+}
